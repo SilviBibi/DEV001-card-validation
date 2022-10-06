@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ELECTRONICLIFE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Mi pantalla de Bienvenida. -->
+    <div class="divi" id="pantInicial">
+      <h1>BIENVENID@ A ELECTRONICLIFE</h1>
+      <p>
+      Aquí encontrarás lo más nuevo en tecnología de celulares, computadores y televisores
+      </p>
+      <p>
+       Te invitamos a darle click en el botón para elegir el articulo de tu preferencia
+      </p>
+  
+    <button class="btnn" type="button" id="btnSig" click="showArticles()">SIGUIENTE</button>
+    
+    </div>
+
+    <!-- Pantalla de selección. -->
+      <div id="selectArticle" style="display:none;">
+      <h1>¿Qué artículo te interesa?</h1>
+      <div class="galeria">
+        <div class="foto">
+       <img src="img/8806094480559-001-750Wx750H.jpg" alt="">
+        </div>
+        <div class="pie">
+          <p>Celular SAMSUNG Galaxy S22 ULTRA 256GB 5G Negro + Watch 4 40mm </p>
+          <p>VALOR: $6.000.000 COP </p>
+          <button class="btnn" type="button" id="samsung" click="celSamsung()">COMPRAR</button>
+        </div>
+      </div>
+      
+      <div class="galeria">
+        <div class="foto">
+          <img src="img/IPHONE 13.jpg" alt="">
+        </div>
+        <div class="pie">
+          <p>iPhone 13 mini 512GB Blanco Estrella</p>
+          <p>VALOR: $5.300.000 COP </p>
+          <button class="btnn" type="button" id="iphone" click="celIphone()">COMPRAR</button>
+        </div>
+      </div>
+      
+      <div class="galeria">
+        <div class="foto">
+          <img src="img/XIAOMI 12.jpg" alt="">
+        </div>
+        <div class="pie">
+          <p>Celular XIAOMI 12 8GB 256GB Gris</p>
+          <p>VALOR: $4.000.000 COP </p>
+          <button class="btnn" type="button" id="xiaomi" click="celXiaomi()">COMPRAR</button>
+         </div>
+         </div>
+
+         <div class="galeria">
+          <div class="foto">
+         <img src="img/TV PHILIPS 50'.jpg" alt="">
+          </div>
+          <div class="pie">
+            <p>TV PHILIPS 50" Pulgadas 126 cm 50PUT6654 4K-UHD LED Plano Smart TV </p>
+            <p>VALOR: $1.400.000 COP </p>
+            <button class="btnn" type="button" id="phillips" click="tvPhillips()">COMPRAR</button>
+           </div>
+           </div>
+
+           <div class="galeria">
+            <div class="foto">
+            <img src="img/TV SAMSUNG 65'.jpg" alt="">
+            </div>
+            <div class="pie">
+              <p>TV SAMSUNG 65" Pulgadas 165.1 cm QN65Q65BA 4K-UHD QLED Plano Smart TV</p>
+              <p>VALOR: $3.000.000 COP </p>
+              <button class="btnn" type="button" id="samsungtv" click="tvSamsung()">COMPRAR</button>
+             </div>
+             </div>
+
+             <div class="galeria">
+              <div class="foto">
+            <img src="img/TV LG 50'.jpg" alt="">
+              </div>
+              <div class="pie">
+                <p>TV LG 50" Pulgadas 126 cm 50NANO75SQA 4K-UHD NanoCell Plano Smart TV </p>
+                <p>VALOR: $2.200.000 COP </p>
+                <button class="btnn" type="button" id="lg" click="tvLg()">COMPRAR</button>
+               </div>
+               </div>
+
+               <div class="galeria">
+                <div class="foto">
+                  <img src="img/PORTATIL ASUS.jpg" alt="">
+                </div>
+                <div class="pie">
+                  <p>Computador Portátil ASUS 14" Pulgadas X415EA - Intel Pentium Gold - RAM 8GB - Disco SSD 256 GB - Plateado </p>
+                  <p>VALOR: $1.400.000 COP </p>
+                  <button class="btnn" type="button" id="asus" click="pcAsus()">COMPRAR</button>
+                 </div>
+                 </div>
+
+                 <div class="galeria">
+                  <div class="foto">
+                  <img src="img/Portatil Gamer ACER.jpg" alt="">
+                  </div>
+                  <div class="pie">
+                    <p>Computador Portátil Gamer ACER 15.6" Pulgadas 53J2 - Intel Core i5 - RAM 8GB - Disco SSD 512GB - Negro </p>
+                    <p>VALOR: $3.300.000 COP </p>
+                    <button class="btnn" type="button" id="acer" click="pcAcer()">COMPRAR</button>
+                   </div>
+                   </div>
+
+                   <div class="galeria">
+                    <div class="foto">
+                  <img src="img/Computador All in One HP.jpg" alt="">
+                    </div>
+                    <div class="pie">
+                      <p>Computador All in One HP - Intel Core i5 - RAM 8GB - Disco SSD 256 GB + Disco HDD 1 TB - Negro </p>
+                      <p>VALOR: $3.200.000 COP </p>
+                      <button class="btnn" type="button" id="hp" click="pcHp()">COMPRAR</button>
+                     </div>
+                     </div>
+       
+    </div>
+
+   
+   <!-- Opciones de pago -->
+   <div class="divi" id="optionPay" style="display:none;">
+    <p>Por favor seleccione un método de pago</p>
+    <button class="btnn" type="button" id="payCash" click="efectivo()">EFECTIVO EN CAJA</button>
+    <button class="btnn" type="button" id="payCredit" click="credito()">TARJETA DE CRÉDITO</button> 
+  </div>
+
+   <!-- Efectivo -->
+   <div id="pagarEfectivo" style="display:none;">
+    <img src="img/buen trabajo.gif" class="chip" alt="">
+    <p>Por favor, debes dirigirte a la sede principal ubicada en la Calle 59 N. 25 - 40 con la referencia de pago QMY5580</p>
+  </div>
+
+   <!-- Tarjeta de Crédito -->
+   <div class="contenido" id="pagarTarjeta" style="display:none;"> 
+  <section class="tarjeta" id="tarjeta">
+  <div class="delantera">
+    <div class="logo" id="logo">
+
+    </div>
+    <img src="img/chip tarjeta.jpg" class="chip" alt="">
+<div class="datos">
+  <div class="grupo" id="numero">
+    <p class="leyenda">Número Tarjeta</p>
+    <p class="numero">#### #### #### ####</p>
+  </div>
+  <div class="flexbox">
+    <div class="grupo" id="nombre">
+      <p class="leyenda">Nombre Tarjeta</p>
+      <p class="nombre">Inserte su nombre</p>
+    </div>
+    <div class="grupo" id="expiracion">
+      <p class="leyenda"> Expiración </p>
+      <p class="expiracion"><span class="mounth">MM</span>/<span class="year">AA</span></p>
+    </div>
+  </div>
+</div>
+  </div>
+<div class="trasera">
+<div class="magnetica"></div>
+<div class="datos">
+  <div class="grupo" id="firma">
+    <p class="leyenda">Firma</p>
+    <div class="firma"><p></p></div>
+  </div>
+  <div class="grupo" id="ccv">
+    <p class="leyenda">CCV</p>
+    <p class="ccv"></p>
+  </div>
+</div>
+<p class="infbanco">
+  Esta tarjeta debe ser firmada por el titular en el momento de recibirla.
+  Esta tarjeta es propiedad del Banco y su utilizacion esta sujeta a las 
+  condiciones que regulan el uso de la misma y el cliente conoce.
+</p>
+<a href="#" class="enlace-banco">www.mibanco.com</a>
+</div>
+  </section>
+
+  <form id="formulario" class="formulario">
+    <div class="grupo">
+      <label for="inputNumero">Número de Tarjeta</label>
+      <input type="text" name="inputNumero" id="inputNumero" maxlength="16" autocomplete="off" required>
+    </div>
+
+    <div class="grupo">
+      <label for="inputNombre">Nombre de Tarjeta</label>
+      <input type="text" id="inputNombre" maxlength="20" autocomplete="off">
+    </div>
+
+    <div class="flexbox">
+    <div class="grupo expira">
+      <label for="selectMes">Expiración</label>
+      <div class="flexbox">
+        <div class="grupo-select">
+          <select class="mes" id="selectMes">
+            <option disabled selected>Mes</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+        </div>
+        <div class="grupo-select">
+          <select class="year" id="selectYear">
+            <option disabled selected>Año</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="grupo ccv">
+      <label for="inputCCV">CCV</label>
+        <input type="text" id="inputCCV" maxlength="3">
+      
+      </div>
+
+    </div>
+    <button type="submit" class="btn-validacion" id="btn-validacion">Validar</button>
+  </form>
+
+  </div>
+  <section class="paginaFinal" id="finalizacion" style="display:none;">
+    <div class="compra">
+      <article class="informativo">
+        <h1> ¡Gracias por elegirnos! </h1>
+
+        <img src="img/minions.gif" class="chip" alt="">
+
+        <p class="descripcion"> Tu compra ha sido efectiva, tu equipo te llegará en 3 días hábiles, 
+          cualquier duda puedes contactarte al 01 8000 35438254.
+          Tarjeta Válida N°
+        </p>
+
+      </article>
+    </div>
+  </section>
+
+  
+    
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
